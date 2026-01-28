@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #email {
+  width: 500px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background: white;
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: 2px solid black;
+  transform: rotate(-8deg);
+}
+
+#top-secret {
+  transform: rotate(8deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+  </style>
+</head>
+<body>
+
+<main id="email">
+  <div id="confidential">CONFIDENTIAL</div>
+  <div id="top-secret">TOP SECRET</div>
+
+  <p>This email contains <span class="blurred">classified</span> information.</p>
+  <p>Please handle this <span class="blurred">carefully</span>.</p>
+  <p>The <span class="blurred">details</span> are sensitive.</p>
+</main>
+
+</body>
+</html>

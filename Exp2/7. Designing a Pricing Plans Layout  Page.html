@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing Plans</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #0077cc;
+      margin-bottom: 40px;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .pricing-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 25px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      flex: 0 0 200px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .pricing-card h2 {
+      margin: 0 0 15px;
+      color: #333;
+    }
+
+    .pricing-card p {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+      color: #0077cc;
+    }
+
+
+    .pro-plan {
+      border: 2px solid #0077cc;
+      flex-grow: 1.2;
+      background: #e0f2ff;
+    }
+
+ 
+    .pro-plan::before {
+      content: "Most Popular";
+      display: block;
+      background: #0077cc;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="pricing-container">
+  <div class="pricing-card basic-plan">
+    <h2>Basic</h2>
+    <p>$9/month</p>
+  </div>
+
+  <div class="pricing-card pro-plan">
+    <h2>Pro</h2>
+    <p>$19/month</p>
+  </div>
+
+  <div class="pricing-card premium-plan">
+    <h2>Premium</h2>
+    <p>$29/month</p>
+  </div>
+</div>
+
+</body>
+</html>
+

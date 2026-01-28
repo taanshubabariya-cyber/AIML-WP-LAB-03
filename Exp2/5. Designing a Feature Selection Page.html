@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feature Selection</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077cc;
+      margin-bottom: 30px;
+    }
+
+    .feature-card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      display: flex;
+      align-items: center;
+      padding: 20px 25px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      min-width: 160px;
+      justify-content: center;
+      font-weight: 600;
+      color: #333;
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .feature-card input[type="checkbox"] {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #0077cc;
+      border-radius: 6px;
+      margin-right: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .feature-card input[type="checkbox"]:checked {
+      background: #0077cc;
+      border-color: #0077cc;
+    }
+
+    .feature-card input[type="checkbox"]:checked::after {
+      content: "✓";
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+   
+    .feature-card input[type="checkbox"]:checked + span {
+      color: #0077cc;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Feature Selection</h1>
+
+<div class="feature-card-container">
+  <label class="feature-card">
+    <input type="checkbox">
+    <span>Dark Mode</span>
+  </label>
+
+  <label class="feature-card">
+    <input type="checkbox">
+    <span>Notifications</span>
+  </label>
+
+  <label class="feature-card">
+    <input type="checkbox">
+    <span>Auto-Save</span>
+  </label>
+
+  <label class="feature-card">
+    <input type="checkbox">
+    <span>Analytics</span>
+  </label>
+</div>
+
+</body>
+</html>
